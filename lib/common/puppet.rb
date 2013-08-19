@@ -5,7 +5,7 @@
 require 'puppet'
 
 # Version 3 specifics
-if Puppet.version[0] == "3"
+if Puppet.version.start_with? "3"
   # This is important when using Puppet > 2.x, will setup important default
   # settings when initializing the puppet app via side doors.
   Puppet.initialize_settings unless Puppet.settings.global_defaults_initialized?
