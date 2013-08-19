@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.email="old.noakes@gmail.com"
   spec.files=Dir["lib/**/*"]
   spec.require_paths=["lib"]
-  spec.add_dependency "puppet", "~> 2.7.21"
+  spec.add_dependency "puppet", ">= 2.7.21"
   spec.add_dependency "puppet-lint", ">= 0.3.2"
   spec.add_dependency "hiera-puppet"
   spec.add_dependency "facter"

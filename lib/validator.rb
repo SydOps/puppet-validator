@@ -1,3 +1,4 @@
+require 'common/puppet'
 require 'validator/lint'
 require 'validator/parser'
 require 'validator/compiler'

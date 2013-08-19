@@ -1,4 +1,4 @@
-require 'puppet'
+require 'common/puppet'
 require 'hiera_puppet'
 require 'facter'
 require 'benchmark'

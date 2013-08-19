@@ -1,3 +1,4 @@
+require 'common/puppet'
 require 'facter'
 require 'hiera'
 

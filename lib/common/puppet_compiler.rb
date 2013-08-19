@@ -1,4 +1,4 @@
-require 'puppet'
+require 'common/puppet'
 require 'puppet/face'
 require 'monkey/puppet'
 require 'monkey/facter'
