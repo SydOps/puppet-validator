@@ -14,6 +14,7 @@ module Facter
     @facts = @facts.merge({
       'architecture'    => 'x86_64',
       'operatingsystem' => 'CentOS',
+      'osfamily'        => 'redhat',
       'ipaddress'       => '127.0.0.1',
       'hostname'        => "#{nodename.split('.').first}",
       'fqdn'            => nodename,
