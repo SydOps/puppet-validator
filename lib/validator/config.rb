@@ -9,10 +9,11 @@ module Validator
   end
 
   class Configuration
-    attr_accessor :hiera_validation
+    attr_accessor :hiera_validation, :hiera_config_path
 
     def initialize
       @hiera_validation = false
+      @hiera_config_path = 'hiera.yaml'
     end
   end
 end
