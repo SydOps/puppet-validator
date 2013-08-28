@@ -25,3 +25,7 @@ node no_template {
 node dynamic_scope {
   class { "dynamic_scope::dynamic": }
 }
+
+node hiera_lookup {
+  class { "hiera_lookup": }
+}

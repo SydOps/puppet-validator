@@ -1,3 +1,4 @@
+require 'validator/config'
 require 'common/puppet'
 require 'hiera_puppet'
 require 'facter'
@@ -19,7 +20,7 @@ module Validator
     end
 
     def compile
-      require 'monkey/hiera'
+      require 'monkey/hiera' unless Validator.config.hiera_validation
 
       setup_compile Locater.find_site_manifest(@location), Locater.find_modules(@location)
       all_nodes = collect_puppet_nodes
@@ -88,6 +89,7 @@ module Validator
       Puppet.settings[:config] = File.join(File.dirname(__FILE__), "..", "resources", "puppet.conf.empty")
       Puppet.settings[:manifestdir] = manifest_path
       Puppet.settings[:modulepath] =  module_path.join(File::PATH_SEPARATOR)
+      Puppet.settings[:hiera_config] = Validator.config.hiera_config_path if Validator.config.hiera_validation
     end
 
     def log log_message

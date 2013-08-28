@@ -1,0 +1,3 @@
+---
+hiera_lookup::test: found_in_hiera_test
+test: found_in_hiera 

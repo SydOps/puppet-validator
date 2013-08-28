@@ -5,6 +5,6 @@ require 'validator/config'
 # user has not requested hiera validation.
 module HieraPuppet
   def self.lookup key, default, scope, override, resolution_type
-    return "test"
+    return "foo"
   end
 end
