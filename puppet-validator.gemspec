@@ -2,7 +2,7 @@ build_number = ENV["BUILD_NUMBER"] || "local"
 
 Gem::Specification.new do |spec|
   spec.name="puppet-validator"
-  spec.version="2.0.1"
+  spec.version="2.0.3"
   spec.date="2013-03-07"
   spec.summary="provides functionality to validate and test puppet manifests"
   spec.description="combines functionality in puppet-lint, puppet verify and puppet compile to provide a way of testing puppet code prior to pushing it live"
