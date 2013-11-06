@@ -8,7 +8,8 @@ Project is under heavy development. To get started pull down the code, build the
 Usage
 -----
 
-`require 'validator/config'
+```ruby
+require 'validator/config'
 
 Validator.configure do |config|
     config.hiera_validation = true
@@ -17,4 +18,5 @@ end
 
 require 'validator'
 
-rake validator:compile`
+rake validator:compile
+```
