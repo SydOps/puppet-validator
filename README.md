@@ -1,4 +1,4 @@
-puppet-validator
+Puppet Validator
 ================
 
 Validate your puppet site easily by compiling, style and syntax checking your puppet site.
