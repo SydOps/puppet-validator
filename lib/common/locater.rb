@@ -35,6 +35,8 @@ module Locater
   end
 
   def self.find_all_manifests(project_root)
-    Dir.glob("#{File.expand_path(project_root)}/**/*.pp")
+    require 'rake/file_list'
+    # Exlude tests
+    Rake::FileList.new('**/*.pp').exclude(/(\/spec|\/tests)/)
   end
 end
