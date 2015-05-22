@@ -5,6 +5,11 @@ Validate your puppet site easily by compiling, style and syntax checking your pu
 
 Project is under heavy development. To get started pull down the code, build the gem (will publish soon) and in your Rakefile simply add:
 
+Build the gem
+-----
+
+    gem build puppet-validator.gemspec
+
 Usage
 -----
 
